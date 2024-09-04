@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center-horizontally {
+  @apply flex justify-center;
+}
+
+.center-vertically {
+  @apply flex items-center;
+}
+
+
+
+.font-custom {
+  @apply font-sans; /* You can replace this with font-serif or font-mono based on your desired font family */
+  font-family: 'Your Custom Font', sans-serif; /* Replace 'Your Custom Font' with the actual font name */
+}
+
+
+body {
+  @apply dark:bg-black bg-white dark:text-white text-black;
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
